@@ -1,0 +1,139 @@
+body,
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    margin: 0;
+}
+
+body {
+    background-image: url('images/background.webp');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #ffffff;
+    /* لون الخلفية */
+    padding: 20px;
+    /* تباعد داخلي */
+    border-radius: 10px;
+    /* حواف مستديرة */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* ظل */
+    text-align: center;
+}
+
+.card-container {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greeting-card {
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border: 1px solid white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+#greetingCard p {
+    font-style: bold;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+}
+
+input {
+    border: 2px solid transparent;
+    width: 20em;
+    height: 4em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+    text-align: center;
+    order: 1;
+}
+
+#designSelect {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    background-color: #f3f3f3;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#designSelect option {
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    line-height: 40px;
+
+}
+
+#designSelect option:hover {
+    background-color: #e0e0e0;
+}
+
+button {
+    width: 15em;
+    height: 2.5em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    order: 2;
+}
+
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}

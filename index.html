@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC Eid</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <select id="designSelect">
+            <option value="images/design1">تصميم 1</option>
+            <option value="images/design2">تصميم 2</option>
+            <option value="images/design3">تصميم 3</option>
+            <option value="images/design4">تصميم 4</option>
+            <option value="images/design5">تصميم 5</option>
+        </select>
+        <div class="card-container">
+            <input type="text" id="nameInput" placeholder="أدخل اسمك هنا...">
+            <div id="greetingCard" class="greeting-card">
+                <p id="nameDisplay">الاسم هنا</p>
+            </div>
+            <button id="downloadBtn">تحميل البطاقة</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
