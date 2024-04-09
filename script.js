@@ -1,4 +1,11 @@
-
+document.getElementById("downloadBtn").addEventListener('click', function() {
+    html2canvas(document.getElementById("greetingCard")).then(canvas => {
+        var link = document.createElement('a');
+        link.download = 'greeting-card.png';
+        link.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        link.click();
+    });
+});
 
 document.getElementById("designSelect").addEventListener("change", function() {
     var selectedDesign = this.value;
@@ -49,11 +56,3 @@ function changeCardDesign(design) {
             break;
     }
 }
-document.getElementById("downloadBtn").addEventListener('click', function() {
-    html2canvas(document.getElementById("greetingCard")).then(canvas => {
-        var link = document.createElement('a');
-        link.download = 'greeting-card.png';
-        link.href = canvas.toDataURL("image/png");
-        link.click();
-    });
-});
